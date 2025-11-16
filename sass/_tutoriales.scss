@@ -36,3 +36,27 @@
         border: none;
     }
 }
+
+@include v.mobile {
+    .tutorial {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .tutoriales {
+        width: 100%;
+    }
+}
+
+@include v.tablet {
+    .tutorial {
+        grid-template-columns: 1fr;
+        padding: 30px;
+    }
+}
+
+@include v.desktop {
+    .tutoriales {
+        width: 70%;
+    }
+}

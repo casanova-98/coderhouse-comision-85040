@@ -81,3 +81,34 @@
         }
     }
 }
+
+@include v.mobile {
+    .articulos {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 20px;
+    }
+
+    .buscador {
+        flex-direction: column;
+        width: 90%;
+        margin: 20px auto;
+
+        &__input {
+            width: 100%;
+        }
+    }
+}
+
+@include v.tablet {
+    .articulos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+@include v.desktop {
+    .articulos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

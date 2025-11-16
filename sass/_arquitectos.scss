@@ -27,3 +27,15 @@
         color: #666;
     }
 }
+
+@include v.mobile {
+    .arquitectos img {
+        width: 100%;
+    }
+}
+
+@include v.tablet {
+    .arquitectos img {
+        width: 80%;
+    }
+}

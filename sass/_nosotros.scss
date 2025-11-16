@@ -67,3 +67,9 @@ button {
         background-color: v.$color-hover;
     }
 }
+
+@include v.tablet {
+    .contacto {
+        width: 80%;
+    }
+}

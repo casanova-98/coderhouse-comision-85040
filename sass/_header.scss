@@ -26,3 +26,15 @@
 header nav ul li a:hover {
     transform: translateY(-5px);
 }
+
+@include v.mobile {
+    .navbar-brand {
+        font-size: 2.2rem;
+    }
+}
+
+@include v.tablet {
+    .navbar-brand {
+        font-size: 2.8rem;
+    }
+}

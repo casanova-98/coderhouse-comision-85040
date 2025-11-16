@@ -33,3 +33,17 @@ footer {
 
 
 }
+
+@include v.mobile {
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}
+
+@include v.desktop {
+    footer {
+        padding: 20px;
+    }
+}

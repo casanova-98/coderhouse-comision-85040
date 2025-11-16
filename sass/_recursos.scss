@@ -93,3 +93,21 @@
 
 
 }
+
+@include v.mobile {
+    .lista-programas {
+        grid-template-columns: 1fr;
+    }
+}
+
+@include v.tablet {
+    .lista-programas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@include v.desktop {
+    .lista-programas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
