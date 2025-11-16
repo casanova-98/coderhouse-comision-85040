@@ -1,0 +1,12 @@
+$fuente: "Smooch Sans", sans-serif;
+$background-image: url(../assets/fondob.jpg);
+$fuente-primaria: white;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $fuente;
+    color: $fuente-primaria;
+}

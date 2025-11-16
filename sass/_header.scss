@@ -1,0 +1,6 @@
+// aca va a ir todo el codigo de css y sass de mi header y su responsive 
+@use "variables" as v;
+
+header{
+    background-image: v.$background-image;
+}
