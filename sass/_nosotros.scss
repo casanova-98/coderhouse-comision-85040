@@ -1,1 +1,69 @@
 @use "variables" as v;
+
+
+.nosotros {
+    @include v.flex(column, center, center, wrap);
+    min-height: 100vh;
+    background-color: v.$fondo-medio;
+    background: linear-gradient(to bottom, #000 0%, #111 40%, #222 100%);
+}
+
+.contacto {
+    background-color: #2c2c2c;
+    padding: v.$padding-secciones;
+    border-radius: 20px;
+    box-shadow: v.$shadow-fuerte;
+    width: 400px;
+    text-align: center;
+    color: #f5f5f5;
+
+    h2 {
+        margin-bottom: 10px;
+        font-size: 50px;
+        color: v.$fuente-media;
+    }
+
+    h3 {
+        font-weight: 400;
+        font-size: 25px;
+        margin-bottom: 25px;
+        color: #2ccc;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+input {
+    padding: 10px;
+    border: none;
+    border-radius: v.$border-radius;
+    background-color: #3a3a3a;
+    color: v.$fuente-label;
+    outline: none;
+    transition: background v.$transition;
+
+    &:focus {
+        background-color: #4a4a4a;
+    }
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: v.$border-radius;
+    background-color: v.$fondo-medio;
+    color: v.$fuente-label;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background v.$transition;
+
+    &:hover {
+        background-color: v.$color-hover;
+    }
+}

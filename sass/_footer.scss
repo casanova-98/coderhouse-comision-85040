@@ -1,1 +1,35 @@
 @use "variables" as v;
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: v.$fondo-oscuro;
+
+    h3 {
+        margin: 0 10px 0 0;
+        font-size: 0.9rem;
+        font-weight: normal;
+        display: inline-block;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        gap: 15px;
+        margin: 0;
+        padding: 0;
+
+        li img {
+            width: 20px;
+            height: auto;
+            transition: v.$transition
+        }
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+
+}

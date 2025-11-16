@@ -1,1 +1,38 @@
 @use "variables" as v;
+
+
+.tutorial {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    justify-items: center;
+    padding: 50px;
+    background: linear-gradient(to bottom, #000, #222);
+}
+
+.tutoriales {
+    text-align: center;
+    color: v.$fuente-primaria;
+    background-color: v.$fondo-oscuro;
+    padding: 20px;
+    border-radius: 15px;
+    width: 45vh;
+    box-shadow: v.$shadow-media;
+    transition: v.$transition;
+
+    &:hover {
+        transform: scale(1.02);
+    }
+
+    h2 {
+        margin-bottom: 15px;
+        font-size: 1.4rem;
+        color: v.$fuente-primaria;
+    }
+
+    iframe {
+        width: 100%;
+        border-radius: 10px;
+        border: none;
+    }
+}
