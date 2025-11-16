@@ -1,0 +1,83 @@
+@use "variables" as v;
+
+.buscador {
+    @include v.flex(column, center, center, wrap);
+    gap: 10px;
+    margin: 40px 0;
+    font-family: v.$fuente;
+
+    .buscador__input {
+        width: 300px;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 25px;
+        background-color: v.$fondo-medio;
+        font-size: 1rem;
+    }
+
+    .buscador__input:focus {
+        box-shadow: v.$shadow-clara;
+        background-color: v.$fondo-medio;
+    }
+
+    .buscador__boton {
+        background-color: v.$fondo-medio;
+        color: v.$fuente-primaria;
+        border: none;
+        border-radius: 25px;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: v.$transition;
+    }
+
+    .buscador__boton:hover {
+        background-color: #444;
+    }
+
+}
+
+.articulos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: v.$padding-secciones;
+    padding: v.$padding-secciones;
+    justify-items: center;
+
+    article {
+        text-align: center;
+    }
+
+    &__titulo {
+        font-size: 2rem;
+        margin-bottom: 10px;
+        font-weight: 500;
+    }
+
+    &__img {
+        width: 250px;
+        height: auto;
+        display: block;
+        margin: 0 auto 10px auto;
+    }
+
+    &__parrafo {
+        font-size: 1.5rem;
+        color: v.$fuente-media;
+        margin-bottom: 10px;
+    }
+
+    &__boton {
+        background-color: v.$fondo-medio;
+        color: v.$fuente-media;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color v.$transition;
+
+        &:hover {
+            background-color: #444;
+        }
+    }
+}

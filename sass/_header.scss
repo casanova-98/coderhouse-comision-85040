@@ -1,6 +1,28 @@
 // aca va a ir todo el codigo de css y sass de mi header y su responsive 
-@use "variables" as v;
+@use "variables" as v; // atajo v : es el nombre que le asigne a variables 
 
-header{
-    background-image: v.$background-image;
+.navbar {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),
+        url(../assets/fondob.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 20vh;
+}
+
+.navbar-brand {
+    text-align: center;
+    text-decoration: none;
+    color: v.$fuente-primaria;
+    font-size: 70px;
+}
+
+.offcanvas-body {
+    color: v.$fuente-primaria;
+    padding: 30px;
+    font-size: 1.5rem;
+}
+
+header nav ul li a:hover {
+    transform: translateY(-5px);
 }

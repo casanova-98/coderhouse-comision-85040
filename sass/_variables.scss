@@ -1,6 +1,18 @@
 $fuente: "Smooch Sans", sans-serif;
-$background-image: url(../assets/fondob.jpg);
 $fuente-primaria: white;
+$fuente-oscura: #555;
+$fuente-media: #999;
+$fuente-label: #ddd;
+$fondo-oscuro: #111;
+$fondo-medio: #222;
+$color-hover: #0097a7;
+$border-radius: 8px;
+$transition: 0.3s ease;
+$padding-secciones: 40px;
+$shadow-clara: 0 0 5px #999;
+$shadow-media: 0 2px 6px rgba(0,0,0,0.08);
+$shadow-fuerte: 0 0 15px rgba(0,0,0,0.5);
+
 
 
 *{
@@ -9,4 +21,25 @@ $fuente-primaria: white;
     box-sizing: border-box;
     font-family: $fuente;
     color: $fuente-primaria;
+}
+
+body {
+    background-color: $fondo-oscuro;
+    padding-top: 20vh;
+}
+
+@mixin flex($direction, $justify, $align, $wrap){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+}
+
+// MIXIN RESPONSIVE 
+
+@mixin mobile{
+    @media (max-width: 600px){
+        @content;
+    }
 }
