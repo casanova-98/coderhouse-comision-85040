@@ -81,10 +81,9 @@
         }
     }
 
-    @include v.mobile {
-        grid-template-columns: 1fr;
-        gap: 25px;
-        padding: 20px;
+    @include v.desktop {
+
+        grid-template-columns: repeat(2, 1fr);
     }
 
     @include v.tablet {
@@ -92,9 +91,11 @@
         gap: 30px;
     }
 
-    @include v.desktop {
 
-        grid-template-columns: repeat(2, 1fr);
+    @include v.mobile {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 20px;
     }
 }
 
