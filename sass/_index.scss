@@ -81,6 +81,16 @@
         }
     }
 
+    &__boton--agotado {
+        background-color: v.$fondo-medio;
+        color: v.$fuente-media;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 5px;
+        text-decoration: line-through;
+        cursor: not-allowed;
+    }
+
     @include v.desktop {
 
         grid-template-columns: repeat(2, 1fr);
