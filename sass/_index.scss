@@ -133,28 +133,6 @@
 }
 
 
-
-// @include v.mobile {
-//     .articulos {
-//         grid-template-columns: 1fr;
-//         gap: 25px;
-//         padding: 20px;
-//     }
-
-
-// @include v.tablet {
-//     .articulos {
-//         grid-template-columns: 1fr;
-//         gap: 30px;
-//     }
-// }
-
-// @include v.desktop {
-//     .articulos {
-//         grid-template-columns: repeat(2, 1fr);
-//     }
-// }
-
 @include v.mobile {
     .buscador {
         flex-direction: column;

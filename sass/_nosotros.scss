@@ -5,7 +5,6 @@
     @include v.flex(column, center, center, wrap);
     min-height: 100vh;
     background-color: v.$fondo-medio;
-    background: linear-gradient(to bottom, #000 0%, #111 40%, #222 100%);
 }
 
 .contacto {
